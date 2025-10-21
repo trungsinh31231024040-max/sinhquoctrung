@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trang chủ bài tập – Tuần 2</title>
+  <style>
+    :root{ --bg:#f6f7fb; --card:#fff; --text:#111; --muted:#666; --link:#2563eb; }
+    *{ box-sizing:border-box }
+    body{ margin:0; font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--text) }
+    header{ background:#0f172a; color:#fff; padding:22px 14px }
+    header .wrap{ max-width:960px; margin:auto; display:flex; align-items:center; gap:14px; justify-content:space-between }
+    header h1{ margin:0; font-size:22px }
+    .wrap{ max-width:960px; margin:auto; padding:18px 14px }
+
+    .profile{ display:flex; gap:16px; align-items:center; background:var(--card); padding:16px; border-radius:14px; box-shadow:0 3px 10px rgba(0,0,0,.06) }
+    .profile img{ width:92px; height:92px; border-radius:50%; object-fit:cover }
+    .profile h2{ margin:0 0 4px; font-size:20px }
+    .links a{ margin-right:12px; color:var(--link); text-decoration:none }
+    .links a:hover{ text-decoration:underline }
+    .muted{ color:var(--muted); }
+
+    h3{ margin:22px 0 10px }
+    .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px }
+    .card{ background:var(--card); border:1px solid #e5e7eb; border-radius:14px; padding:14px }
+    .card a{ text-decoration:none; color:#0f172a; font-weight:700 }
+    .card p{ margin:6px 0 0; color:var(--muted) }
+
+    footer{ text-align:center; color:var(--muted); padding:24px 0 }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Bài tập về nhà – Tuần 2</h1>
+      <span class="muted">Tuan2/VeNha/index.html</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- ==== THÔNG TIN CÁ NHÂN (THAY ĐỔI Ở ĐÂY) ==== -->
+    <section class="profile">
+      
+      <div>
+        <h2>Sinh Quốc Trung</h2>
+        <p class="muted">MSSV: 31231024040 · Khoa CNTT Kinh doanh (UEH)</p>
+        <div class="links">
+          <a href="mailto:abc@ueh.edu.vn">trungsinh.31231024040@ueh.edu.vn</a>
+          <a href="https://facebook.com/quoc.trung.195873" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://github.com/trungsinh31231024040-max/sinhquoctrung" target="_blank" rel="noopener">GitHub</a>
+          <!-- thêm social khác nếu cần -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== DANH SÁCH BÀI TẬP ==== -->
+    <h3>Danh sách bài đã làm</h3>
+    <section class="grid">
+      <div class="card">
+        <a href="Tuan2/VeNha/baitap1.html">Bài tập 1 (Câu 1-7)</a>
+        <p>H1/H2, nền + nhạc + chữ chạy, danh sách, liên kết, bảng…</p>
+      </div>
+      <div class="card">
+        <a href="Tuan2/VeNha/baitap2.html">Bài tập 2 (Câu 8)</a>
+        <p>Bố cục HTML5: header, nav, section, article, aside, figure, footer.</p>
+      </div>
+      <div class="card">
+        <a href="Tuan2/VeNha/baitap3.html">Bài tập 3 (Câu 9 - Form)</a>
+        <p>Form HTML5: placeholder, required, color/number/date/url…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 – Sinh viên UEH</footer>
+</body>
+</html>

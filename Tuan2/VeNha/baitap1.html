@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Bài tập HTML</title>
+  <style>
+    h1{ text-align:center; color:blue; font-weight:bold; }
+    h2{ text-align:right; color:red; font-style:italic; }
+  </style>
+</head>
+<body id="top">
+  <h1>Chào mừng bạn đến website của trường ĐHKT TP.HCM</h1>
+  <h2>Khoa Công Nghệ Thông Tin Kinh Doanh</h2>
+</body>
+</html>
+<style>
+  body{
+    background: url('bg.jpg') center/cover no-repeat fixed; /* thay bằng ảnh của bạn */
+  }
+  .ticker{ color:#111; font-weight:bold; }
+</style>
+
+<!-- Trong body, chèn sau H2 -->
+<marquee class="ticker" behavior="scroll" direction="left" scrollamount="6">
+  Chào mừng bạn đến website của trường ĐHKT TP.HCM
+</marquee>
+
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<h3 id="cau3"></h3>
+<h3>Danh sách chuyên ngành đào tạo</h3>
+<ul>
+  <li>Đại học
+    <ul>
+      <li>Hệ Thống thông tin quản lý</li>
+      <li>Thương mại điện tử</li>
+      <li>ERP</li>
+    </ul>
+  </li>
+  <li>Sau đại học
+    <ul>
+      <li>Thạc sỹ Công nghệ thiết kế thông tin &amp; truyền thông</li>
+    </ul>
+  </li>
+</ul>
+<h3 id="cau4"></h3>
+<section class="cards">
+  <!-- Bài 1 -->
+  <article class="card">
+    <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/bit-770x385.jpg" alt="Kỹ thuật Phần mềm – UEH BIT">
+    <div class="body">
+      <h3>Kỹ thuật Phần mềm</h3>
+      <p>Chương trình trang bị nền tảng và chuyên môn về phân tích yêu cầu, thiết kế, lập trình và kiểm thử; gắn kết doanh nghiệp để cập nhật công nghệ.</p>
+      <p><a href="https://bit.ueh.edu.vn/cong-nghe-phan-mem" target="_blank" rel="noopener">Xem chi tiết</a></p>
+    </div>
+  </article>
+
+  <!-- Bài 2 -->
+  <article class="card">
+    <img src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/e-commerce-770x385.jpg" alt="Thương mại điện tử – UEH BIT">
+    <div class="body">
+      <h3>Thương mại điện tử</h3>
+      <p>Đào tạo cử nhân TMĐT theo chuẩn quốc tế, giúp lập kế hoạch, triển khai và quản trị hoạt động kinh doanh số của doanh nghiệp.</p>
+      <p><a href="https://bit.ueh.edu.vn/chuyen-nganh-thuong-mai-dien-tu" target="_blank" rel="noopener">Xem chi tiết</a></p>
+    </div>
+  </article>
+</section>
+
+<style>
+  .cards{
+    max-width: 960px; margin: 0 auto; padding: 8px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    font-family: system-ui, Segoe UI, Arial, sans-serif; line-height: 1.55;
+  }
+  .card{ border:1px solid #e5e7eb; border-radius:12px; overflow:hidden; background:#fff }
+  .card img{ width:100%; height:220px; object-fit:cover; display:block }
+  .card .body{ padding:12px 14px }
+  .card h3{ margin:0 0 6px; font-size:18px }
+  .card p{ margin:0 0 10px; color:#444 }
+
+
+<section class="cards3">
+  <!-- 1) CÔNG NGHỆ PHẦN MỀM -->
+  <article class="card3">
+    <img
+      src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/bit-770x385.jpg"
+      alt="Công nghệ phần mềm – UEH BIT"
+      onerror="this.src='https://picsum.photos/770/385?random=11'"
+    />
+    <div class="body">
+      <h3>Công nghệ phần mềm</h3>
+      <p>Nhu cầu xã hội và CMCN 4.0 làm tăng vai trò của công nghệ phần mềm trong số hoá. Chương trình trang bị nền tảng phân tích, thiết kế, lập trình và kiểm thử gắn với thực tiễn doanh nghiệp.</p>
+      <p><a href="https://bit.ueh.edu.vn/cong-nghe-phan-mem/" target="_blank" rel="noopener">Xem chi tiết</a></p>
+    </div>
+  </article>
+
+  <!-- 2) THƯƠNG MẠI ĐIỆN TỬ -->
+  <article class="card3">
+    <img
+      src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/e-commerce-770x385.jpg"
+      alt="Thương mại điện tử – UEH BIT"
+      onerror="this.src='https://picsum.photos/770/385?random=12'"
+    />
+    <div class="body">
+      <h3>Thương mại điện tử</h3>
+      <p>Đào tạo cử nhân TMĐT theo chuẩn quốc tế, phát triển kiến thức và kỹ năng để lập kế hoạch, triển khai và quản trị hoạt động kinh doanh số trong doanh nghiệp.</p>
+      <p><a href="https://bit.ueh.edu.vn/chuyen-nganh-thuong-mai-dien-tu/" target="_blank" rel="noopener">Xem chi tiết</a></p>
+    </div>
+  </article>
+
+  <!-- 3) HỆ THỐNG THÔNG TIN KINH DOANH -->
+  <article class="card3">
+    <img
+      src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/information-system-770x385.jpg"
+      alt="Hệ thống thông tin kinh doanh – UEH BIT"
+      onerror="this.src='https://picsum.photos/770/385?random=13'"
+    />
+    <div class="body">
+      <h3>Hệ thống thông tin kinh doanh</h3>
+      <p>Trang bị kiến thức về dữ liệu, hệ thống thông tin và phân tích nghiệp vụ để hỗ trợ ra quyết định, tối ưu quy trình và chuyển đổi số doanh nghiệp.</p>
+      <p><a href="https://bit.ueh.edu.vn/chuyen-nganh-he-thong-thong-tin-kinh-doanh/" target="_blank" rel="noopener">Xem chi tiết</a></p>
+    </div>
+  </article>
+</section>
+
+<!-- Danh sách liên kết theo yêu cầu -->
+<ul class="links3">
+  <li><strong>CÔNG NGHỆ PHẦN MỀM:</strong> 
+    <a href="https://bit.ueh.edu.vn/cong-nghe-phan-mem/" target="_blank" rel="noopener">https://bit.ueh.edu.vn/cong-nghe-phan-mem/</a>
+  </li>
+  <li><strong>Thương mại điện tử:</strong>
+    <a href="https://bit.ueh.edu.vn/chuyen-nganh-thuong-mai-dien-tu/" target="_blank" rel="noopener">https://bit.ueh.edu.vn/chuyen-nganh-thuong-mai-dien-tu/</a>
+  </li>
+  <li><strong>HỆ THỐNG THÔNG TIN KINH DOANH:</strong>
+    <a href="https://bit.ueh.edu.vn/chuyen-nganh-he-thong-thong-tin-kinh-doanh/" target="_blank" rel="noopener">https://bit.ueh.edu.vn/chuyen-nganh-he-thong-thong-tin-kinh-doanh/</a>
+  </li>
+</ul>
+
+<style>
+  .cards3{
+    max-width: 1100px; margin: 0 auto 8px; padding: 8px;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    font-family: system-ui, Segoe UI, Arial, sans-serif; line-height: 1.55;
+  }
+  .card3{ border:1px solid #e5e7eb; border-radius:12px; overflow:hidden; background:#fff }
+  .card3 img{ width:100%; height:200px; object-fit:cover; display:block }
+  .card3 .body{ padding:12px 14px }
+  .card3 h3{ margin:0 0 6px; font-size:18px }
+  .card3 p{ margin:0 0 10px; color:#444 }
+  .links3{ max-width:1100px; margin:6px auto 16px; }
+  /* Responsive */
+  @media (max-width: 980px){ .cards3{ grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px){ .cards3{ grid-template-columns: 1fr; } .card3 img{ height:180px; } }
+</style>
+<section class="cards3">
+</h3>
+  <!-- 1) CÔNG NGHỆ PHẦN MỀM -->
+  <article class="card3">
+    <img
+      src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/bit-770x385.jpg"
+      alt="Công nghệ phần mềm – UEH BIT"
+      onerror="this.src='https://picsum.photos/770/385?random=11'"
+    />
+    <div class="body">
+      <h3>Công nghệ phần mềm</h3>
+      <p>Nhu cầu xã hội và CMCN 4.0 làm tăng vai trò của công nghệ phần mềm trong số hoá. Chương trình trang bị nền tảng phân tích, thiết kế, lập trình và kiểm thử gắn với thực tiễn doanh nghiệp.</p>
+      <p><a href="https://bit.ueh.edu.vn/cong-nghe-phan-mem/" target="_blank" rel="noopener">Xem chi tiết</a></p>
+    </div>
+  </article>
+
+  <!-- 2) THƯƠNG MẠI ĐIỆN TỬ -->
+  <article class="card3">
+    <img
+      src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/e-commerce-770x385.jpg"
+      alt="Thương mại điện tử – UEH BIT"
+      onerror="this.src='https://picsum.photos/770/385?random=12'"
+    />
+    <div class="body">
+      <h3>Thương mại điện tử</h3>
+      <p>Đào tạo cử nhân TMĐT theo chuẩn quốc tế, phát triển kiến thức và kỹ năng để lập kế hoạch, triển khai và quản trị hoạt động kinh doanh số trong doanh nghiệp.</p>
+      <p><a href="https://bit.ueh.edu.vn/chuyen-nganh-thuong-mai-dien-tu/" target="_blank" rel="noopener">Xem chi tiết</a></p>
+    </div>
+  </article>
+
+  <!-- 3) HỆ THỐNG THÔNG TIN KINH DOANH (dùng ảnh từ HTTT QUẢN LÝ/MIS) -->
+<article class="card3">
+  <img
+    src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/mis-300x150.jpg"
+    alt="Hệ thống thông tin quản lý (MIS) – UEH BIT"
+  />
+  <div class="body">
+    <h3>Hệ thống thông tin kinh doanh</h3>
+    <p>Trang bị kiến thức về dữ liệu, hệ thống thông tin và phân tích nghiệp vụ để hỗ trợ ra quyết định, tối ưu quy trình và chuyển đổi số doanh nghiệp.</p>
+    <p><a href="https://bit.ueh.edu.vn/chuyen-nganh-he-thong-thong-tin-kinh-doanh/" target="_blank" rel="noopener">Xem chi tiết</a></p>
+  </div>
+</article>
+<style>
+  .cards3{
+    max-width: 1100px; margin: 0 auto 8px; padding: 8px;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    font-family: system-ui, Segoe UI, Arial, sans-serif; line-height: 1.55;
+  }
+  .card3{ border:1px solid #e5e7eb; border-radius:12px; overflow:hidden; background:#fff }
+  .card3 img{ width:100%; height:200px; object-fit:cover; display:block }
+  .card3 .body{ padding:12px 14px }
+  .card3 h3{ margin:0 0 6px; font-size:18px }
+  .card3 p{ margin:0 0 10px; color:#444 }
+  .links3{ max-width:1100px; margin:6px auto 16px; }
+  /* Responsive */
+  @media (max-width: 980px){ .cards3{ grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px){ .cards3{ grid-template-columns: 1fr; } .card3 img{ height:180px; } }
+</style>
+
+<!-- Câu 6: Menu liên kết nội trang -->
+  <nav>
+    <ul>
+      <li><a href="#cau3">Câu 3</a></li>
+      <li><a href="#cau4">Câu 4</a></li>
+      <li><a href="#cau5">Câu 5</a></li>
+      <li><a href="#top">Về đầu trang</a></li>
+    </ul>
+  </nav>
+
+<style>
+  /* khung nội dung chuẩn 1100px giống phần thẻ bài */
+  .wrap1100{ max-width:1100px; margin:0 auto; padding:0 8px; }
+
+  /* căn giữa bảng */
+  .tbl-center{ margin:16px auto; border-collapse:collapse; }
+  .tbl-center th, .tbl-center td{ border:1px solid #333; padding:6px 10px; }
+  .tbl-center tfoot td{ text-align:center; font-weight:700; }
+</style>
+
+<!-- BẢNG: đưa tiêu đề + bảng vào cùng khung 1100px và căn giữa -->
+<section class="wrap1100">
+  <h3 style="text-align:center">Bảng minh họa</h3>
+
+  <table class="tbl-center">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Môn học</th>
+        <th>Số tín chỉ</th>
+        <th>Ghi chú</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td><td>Hệ thống thông tin</td><td>3</td><td>–</td>
+      </tr>
+      <tr>
+        <td>2</td><td>Thương mại điện tử</td><td>3</td><td>–</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr><td colspan="4">Tổng kết</td></tr>
+    </tfoot>
+  </table>
+</section>
+
+
